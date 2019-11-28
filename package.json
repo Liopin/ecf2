@@ -1,0 +1,33 @@
+{
+  "name": "ecf",
+  "version": "1.0.0",
+  "description": "site dynamique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev": "concurrently \"nodemon server.js\" \"npm start --prefix=client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liopin/ecf.git"
+  },
+  "author": "Lionel Pinheiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liopin/ecf/issues"
+  },
+  "homepage": "https://github.com/Liopin/ecf#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.11"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4"
+  }
+}
